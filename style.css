@@ -148,6 +148,8 @@ body {
 
 .copyright p {
   text-align: center;
+  text-decoration: none;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
@@ -170,8 +172,12 @@ body {
 
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 3rem;
     text-align: start;
+  }
+
+  .footer-logo img{
+    order: 1;
   }
 
   .footer-opening-hours p {
@@ -189,6 +195,10 @@ body {
 
   .footer-contacts a {
     font-size: 1.5rem;
+  }
+
+  .copyright p {
+    text-align: start;
   }
 }
 
