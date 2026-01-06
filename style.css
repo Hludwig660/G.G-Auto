@@ -130,6 +130,10 @@ body {
   border-radius: 50%;
 }
 
+.footer-logo p {
+  color: #fff;
+}
+
 .footer-contacts p {
   font-size: 1.5rem;
   color: #fff;
@@ -147,6 +151,7 @@ body {
 }
 
 .copyright p {
+  font-size: 0.7rem;
   text-align: center;
   text-decoration: none;
   pointer-events: none;
@@ -179,6 +184,10 @@ body {
 
   .footer-logo img {
     order: 1;
+  }
+
+  .footer-logo p{
+    font-size: 0.8rem;
   }
 
   .footer-opening-hours p {
