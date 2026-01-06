@@ -150,6 +150,7 @@ body {
   text-align: center;
   text-decoration: none;
   pointer-events: none;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -176,7 +177,7 @@ body {
     text-align: start;
   }
 
-  .footer-logo img{
+  .footer-logo img {
     order: 1;
   }
 
@@ -199,6 +200,7 @@ body {
 
   .copyright p {
     text-align: start;
+    font-size: 0.7rem;
   }
 }
 
