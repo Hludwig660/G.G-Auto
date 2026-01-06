@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline   : 2px solid #a62b44;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 1rem 10%;
+  background-color: #121212;
+}
+
+.navigation .logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.btn {
+  border: 1px solid #a62b44;
+  background-color: #a62b44;
+  padding: 0.5rem 2rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.hero {
+  height: 90vh;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero-text {
+  margin-top: 15%;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+
+.hero-text p {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.location {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.location .maps-location {
+  margin-top: 2.5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #121212;
+}
+
+.footer-opening-hours {
+  color: #fff;
+}
+
+.footer-opening-hours p {
+  font-size: 1.5rem;
+  margin-bottom: 1ch;
+}
+
+.footer-opening-hours ul {
+  list-style: none;
+}
+
+.footer-opening-hours ul li {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.footer-contacts p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1ch;
+}
+
+.footer-contacts a {
+  text-decoration: none;
+  color: #a62b44;
+  font-size: 2rem;
+}
+
+.copyright {
+  padding: 0.5rem;
+}
+
+.copyright p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navigation .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-text {
+    margin-top: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer-opening-hours p {
+    font-size: 1.2rem;
+  }
+
+  .footer-contacts p {
+    font-size: 1.2rem;
+  }
+
+  .footer-contacts a {
+    font-size: 1.5rem;
+  }
+}
