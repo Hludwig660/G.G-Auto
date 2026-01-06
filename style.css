@@ -171,10 +171,16 @@ body {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 1rem;
+    text-align: start;
   }
 
   .footer-opening-hours p {
     font-size: 1.2rem;
+  }
+
+  .footer-opening-hours ul li {
+    font-size: 0.9rem;
+    text-align: start;
   }
 
   .footer-contacts p {
