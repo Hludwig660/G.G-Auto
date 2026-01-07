@@ -191,7 +191,7 @@ body {
   color: #fff;
 }
 
-.footer-opening-hours p {
+.footer-opening-hours h3 {
   font-size: 1.2rem;
   margin-bottom: 1ch;
 }
@@ -217,7 +217,7 @@ body {
   font-size: 0.9rem;
 }
 
-.footer-contacts p {
+.footer-contacts h3 {
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 1ch;
@@ -308,10 +308,10 @@ body {
   }
 
   .footer-logo p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
-  .footer-opening-hours p {
+  .footer-opening-hours h3 {
     font-size: 1.2rem;
   }
 
@@ -320,11 +320,11 @@ body {
   }
 
   .footer-opening-hours ul li {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: start;
   }
 
-  .footer-contacts p {
+  .footer-contacts h3 {
     font-size: 1.2rem;
   }
 
