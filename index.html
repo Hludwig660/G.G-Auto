@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="G.G Auto">
+    <meta name="description" content="G.G Auto: noleggio a lungo termine e vendita auto. Soluzioni flessibili per privati e aziende, anche senza busta paga. Trova l'auto dei tuoi sogni oggi stesso!">
     <title>G.G Auto - Vendita & Noleggio Auto</title>
     <link rel="icon" type="image/jpg" href="Images/logo.jpg" >
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="Images/hero.jpg" as="image">
+    <link rel="preload" href="Images/logo.jpg" as="image">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" media="print">
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a href="#" class="logo"
+      <nav class="navigation" aria-label="Navigazione principale">
+        <a href="#" class="logo" aria-label="Vai alla homepage di G.G Auto"
           ><img src="Images/logo.jpg" alt="G.G Auto Logo"
         /></a>
 
-        <a href="tel:3663092552" class="btn">Chiamaci <img src="Images/phone-line.svg" alt=""></a>
+        <a href="tel:3663092552" class="btn" aria-label="Chiama G.G Auto al numero 3663092552">Chiamaci <img src="Images/phone-line.svg" alt="Icona telefono" aria-hidden="true"></a>
       </nav>
     </header>
 
@@ -34,8 +38,8 @@
         <h2>Servizi</h2>
 
         <div class="services-main">
-          <div class="services-card">
-            <img src="Images/hand-coin-line.svg" alt="">
+          <div class="services-card" aria-label="Servizio di finanziamento">
+            <img src="Images/hand-coin-line.svg" alt="Icona finanziamento" loading="lazy" aria-hidden="true">
             <p>
               Offriamo soluzioni di finanziamento su misura, studiate per
               adattarsi perfettamente al tuo budget.
@@ -50,20 +54,20 @@
               
             </p>
           </div>
-          <div class="services-card">
-            <img src="Images/car-loan-3-svgrepo-com (1).svg" alt="">
+          <div class="services-card" aria-label="Servizio di permuta auto">
+            <img src="Images/car-loan-3-svgrepo-com (1).svg" alt="Icona permuta auto" loading="lazy" aria-hidden="true">
             <p>
               Vuoi cambiare auto ma non vuoi perdere tempo con annunci privati e trattative infinite? Presso la nostra concessionaria, la tua vecchia vettura ha valore! Offriamo un servizio di permuta rapido e trasparente. Ritiriamo il tuo usato con valutazione basata sulle reali quotazioni di mercato. Per ricevere una quotazione indicativa.
             </p>
           </div>
-          <div class="services-card">
-            <img src="Images/safety-svgrepo-com.svg" alt="">
+          <div class="services-card" aria-label="Servizio di garanzia e sicurezza">
+            <img src="Images/safety-svgrepo-com.svg" alt="Icona garanzia e sicurezza" loading="lazy" aria-hidden="true">
             <p>
               Scegliere un'auto da noi significa scegliere la sicurezza. Oltre alla garanzia legale, offriamo programmi di estensione di garanzia personalizzati. Il nostro obiettivo è garantirti un'esperienza di guida senza pensieri. Aggiungi più anni di protezione alla tua vettura. Con i nostri piani di estensione garanzia, sei al riparo da ogni guasto imprevisto.
             </p>
           </div>
-          <div class="services-card">
-            <img src="Images/car-rental-svgrepo-com.svg" alt="">
+          <div class="services-card" aria-label="Servizio di noleggio auto">
+            <img src="Images/car-rental-svgrepo-com.svg" alt="Icona noleggio auto" loading="lazy" aria-hidden="true">
             <p>
               Offriamo un servizio di noleggio professionale studiato per privati e professionisti che cercano affidabilità e convenienza. La nostra formula permette di accedere a un veicolo senza immobilizzare capitali, garantendo la massima flessibilità anche a chi non dispone di documentazione reddituale standard.
             </p>
@@ -82,6 +86,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="Mappa della posizione di G.G Auto"
           ></iframe>
         </div>
       </section>
@@ -95,7 +100,7 @@
         </div>
 
         <div class="footer-opening-hours">
-          <p>Vendita</p>
+          <h3>Vendita</h3>
           <ul>
             <li>Lunedì - Venerdì: 8:00 - 19:00</li>
             <li>Sabato: 10:00 - 16:00</li>
@@ -104,20 +109,21 @@
         </div>
 
         <div class="footer-contacts">
-          <p>Seguici sui social</p>
+          <h3>Seguici sui social</h3>
           <div class="footer-contacts-icon">
 <a
             href="https://www.tiktok.com/@ggautodiaulettagaetano?_r=1&_t=ZN-92pWUczqOFa"
             target="_blank"
-            aria-label="Profilo TikTok"
-            ><img src="Images/tiktok-line.svg" alt="">
+            aria-label="Visita il nostro profilo TikTok"
+            ><img src="Images/tiktok-line.svg" alt="Logo TikTok" loading="lazy">
           </a>
+
           <a
             href="https://www.instagram.com/g.g.auto_gaetano_auletta_?igsh=MTQ3aGdsdG96eGloOA=="
             target="_blank"
-            aria-label="Profilo Instagram"
-            ><img src="Images/instagram-line.svg" alt=""></a>
-          <a href="#"><img src="Images/whatsapp-line.svg" alt=""></a>
+            aria-label="Visita il nostro profilo Instagram"
+            ><img src="Images/instagram-line.svg" alt="Logo Instagram" loading="lazy"></a>
+          <a href="#" aria-label="Contattaci su WhatsApp"><img src="Images/whatsapp-line.svg" alt="Logo WhatsApp" loading="lazy"></a>
           </div>
           
         </div>
