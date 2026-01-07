@@ -89,13 +89,54 @@ body {
   letter-spacing: 5px;
 }
 
-.location {
+.services {
+  margin: 2rem 10%;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services-main {
   margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.services-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem 5rem;
+  border: 2px solid #121212;
+  border-radius: 1rem;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-card i {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+}
+
+.services-card p {
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.location {
+  margin: 2rem 1%;
   text-align: center;
 }
 
 .location .maps-location {
   margin-top: 2.5rem;
+  border: 2px dashed #121212;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer-container {
@@ -112,16 +153,18 @@ body {
 }
 
 .footer-opening-hours p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1ch;
 }
 
 .footer-opening-hours ul {
   list-style: none;
+  justify-self: center;
 }
 
 .footer-opening-hours ul li {
-  text-align: center;
+  text-align: justify;
+  font-size: 0.9rem;
 }
 
 .footer-logo img {
@@ -132,10 +175,11 @@ body {
 
 .footer-logo p {
   color: #fff;
+  font-size: 0.9rem;
 }
 
 .footer-contacts p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   margin-bottom: 1ch;
 }
@@ -143,7 +187,7 @@ body {
 .footer-contacts a {
   text-decoration: none;
   color: #a62b44;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .copyright {
@@ -176,6 +220,19 @@ body {
     font-size: 1.3rem;
   }
 
+  .services-main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .services-card {
+    padding: 1rem;
+  }
+
+  .services-card p {
+    letter-spacing: normal;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -186,12 +243,16 @@ body {
     order: 1;
   }
 
-  .footer-logo p{
+  .footer-logo p {
     font-size: 0.8rem;
   }
 
   .footer-opening-hours p {
     font-size: 1.2rem;
+  }
+
+  .footer-opening-hours ul {
+    justify-self: start;
   }
 
   .footer-opening-hours ul li {
