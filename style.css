@@ -23,7 +23,7 @@ img {
 
 /* Body Styles */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
 }
 
@@ -45,6 +45,17 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation a img {
+  width: 24px;
+  margin-left: 1ch;
 }
 
 /* Button Styles */
@@ -115,6 +126,7 @@ body {
 }
 
 .services-card {
+  max-height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,8 +137,8 @@ body {
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.services-card i {
-  font-size: 10rem;
+.services-card img {
+  width: 100px;
   margin-bottom: 2rem;
 }
 
@@ -148,7 +160,6 @@ body {
 
 .location .maps-location {
   margin-top: 2.5rem;
-  border: 2px dashed #121212;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -206,6 +217,17 @@ body {
   font-size: 1.5rem;
 }
 
+.footer-contacts-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-contacts-icon a img {
+  width: 24px;
+}
+
 /* Copyright Styles */
 .copyright {
   padding: 0.5rem;
@@ -250,12 +272,17 @@ body {
   }
 
   .services-card {
+    max-height: 400px;
     padding: 1rem;
   }
 
   .services-card p {
     text-align: center;
     letter-spacing: normal;
+  }
+
+  .services-card img {
+    width: 50px;
   }
 
   .footer-container {
@@ -291,6 +318,10 @@ body {
 
   .footer-contacts a {
     font-size: 1.5rem;
+  }
+
+  .footer-contacts-icon {
+    justify-content: start;
   }
 
   .copyright p {
