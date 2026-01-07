@@ -1,24 +1,33 @@
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus Styles for Accessibility */
 a:focus,
 button:focus,
 input:focus {
   outline: 2px solid #a62b44;
 }
 
+/* Image Styles */
 img {
   max-width: 100%;
 }
 
+/* Body Styles */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
 }
 
+/* Navigation Styles */
 .navigation {
   position: fixed;
   width: 100%;
@@ -38,6 +47,7 @@ body {
   border-radius: 50%;
 }
 
+/* Button Styles */
 .btn {
   border: 1px solid #a62b44;
   background-color: #a62b44;
@@ -54,6 +64,7 @@ body {
   background: transparent;
 }
 
+/* Hero Section Styles */
 .hero {
   height: 90vh;
   padding: 1rem;
@@ -62,7 +73,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: flex;
   align-items: start;
   justify-content: center;
@@ -71,7 +81,6 @@ body {
 .hero-text {
   margin-top: 15%;
   color: #fff;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -89,6 +98,7 @@ body {
   letter-spacing: 5px;
 }
 
+/* Services Section Styles */
 .services {
   margin: 2rem 10%;
 }
@@ -126,6 +136,11 @@ body {
   text-align: justify;
 }
 
+.services-card ul {
+  list-style: inside;
+}
+
+/* Location Section Styles */
 .location {
   margin: 2rem 1%;
   text-align: center;
@@ -139,6 +154,7 @@ body {
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer Styles */
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -190,6 +206,7 @@ body {
   font-size: 1.5rem;
 }
 
+/* Copyright Styles */
 .copyright {
   padding: 0.5rem;
 }
@@ -202,6 +219,9 @@ body {
   color: black;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Tablet and Smaller Screens */
 @media (max-width: 768px) {
   .navigation .logo img {
     width: 60px;
@@ -220,6 +240,10 @@ body {
     font-size: 1.3rem;
   }
 
+  .services {
+    margin: 2rem 5%;
+  }
+
   .services-main {
     grid-template-columns: 1fr;
     padding: 1rem;
@@ -230,6 +254,7 @@ body {
   }
 
   .services-card p {
+    text-align: center;
     letter-spacing: normal;
   }
 
@@ -274,6 +299,7 @@ body {
   }
 }
 
+/* Mobile Screens */
 @media (max-width: 480px) {
   .hero-text p {
     font-size: 1.2rem;
