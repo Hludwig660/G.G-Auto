@@ -164,6 +164,10 @@ body {
   list-style: inside;
 }
 
+.services-card ul li{
+  margin-bottom: 0.5ch;
+}
+
 /* Location Section Styles */
 .location {
   margin: 2.5rem 1%;
