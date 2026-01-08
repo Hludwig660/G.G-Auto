@@ -248,9 +248,6 @@ body {
 .copyright p {
   font-size: 0.7rem;
   text-align: center;
-  text-decoration: none;
-  pointer-events: none;
-  color: black;
 }
 
 /* Media Queries for Responsiveness */
