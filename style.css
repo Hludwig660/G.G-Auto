@@ -342,6 +342,7 @@ body {
 .card-model {
   margin: 0.5ch 0 1ch;
 }
+
 .card-ali,
 .card-km {
   margin-top: 0.5ch;
@@ -435,7 +436,7 @@ body {
     width: 20px;
   }
 
-  .fixed-button.up {
+  .fixed-button.up.visible {
     display: flex;
   }
 
@@ -491,6 +492,14 @@ body {
   .copyright p {
     text-align: start;
     font-size: 0.7rem;
+  }
+
+  .card-info .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-info .card-model {
+    font-size: 0.9rem;
   }
 }
 

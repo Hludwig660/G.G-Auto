@@ -14,7 +14,7 @@ function renderCards(data) {
   <div class="card">
             <img
               src="${auto.img}"
-              alt="Auto"
+              alt="Foto dell'auto ${auto.name}"
               class="card-img"
             />
 
@@ -25,7 +25,7 @@ function renderCards(data) {
               <p class="card-km">Km: <span>${auto.km}</span></p>
               <p class="card-price">€ ${auto.price}</p>
 
-              <button class="card-btn">Visualizza Dettagli</button>
+              <button class="card-btn" aria-label="Visualizza dettagli per ${auto.name}">Visualizza Dettagli</button>
             </div>
           </div>
   `
@@ -35,3 +35,14 @@ function renderCards(data) {
 }
 
 renderCards(cars);
+
+// Gestione visibilità bottone "up" dopo 300px di scroll
+const upButton = document.querySelector(".fixed-button.up");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    upButton.classList.add("visible");
+  } else {
+    upButton.classList.remove("visible");
+  }
+});
