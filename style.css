@@ -164,7 +164,7 @@ body {
   list-style: inside;
 }
 
-.services-card ul li{
+.services-card ul li {
   margin-bottom: 0.5ch;
 }
 
@@ -179,6 +179,24 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-button {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #26d466;
+  border: 1px solid #26d466;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-button img {
+  width: 25px;
 }
 
 /* Footer Styles */
@@ -296,6 +314,16 @@ body {
 
   .services-card img {
     width: 50px;
+  }
+
+  .fixed-button {
+    width: 30px;
+    height: 30px;
+    left: 91%;
+  }
+
+  .fixed-button img {
+    width: 20px;
   }
 
   .footer-container {
