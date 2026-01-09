@@ -183,16 +183,30 @@ body {
 
 .fixed-button {
   position: fixed;
-  top: 50%;
   left: 10px;
   width: 40px;
   height: 40px;
-  background-color: #26d466;
-  border: 1px solid #26d466;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fixed-button img {
+  width: 25px;
+}
+
+.fixed-button.whatsapp {
+  top: 50%;
+  background-color: #26d466;
+  border: 1px solid #26d466;
+}
+
+.fixed-button.up {
+  display: none;
+  top: 90%;
+  background-color: #a62b44;
+  border: 1px solid #a62b44;
 }
 
 .fixed-button img {
@@ -207,6 +221,24 @@ body {
   padding: 2rem 1rem;
   text-align: center;
   background-color: #121212;
+}
+
+.footer-title {
+  grid-column: 1 / -1;
+  color: #fff;
+}
+
+.bar-divider {
+  grid-column: 1 / -1;
+  margin: 2rem auto;
+  height: 1px;
+  width: 75%;
+  background: linear-gradient(
+    90deg,
+    rgba(166, 43, 68, 0) 0%,
+    rgba(166, 43, 68, 1) 50%,
+    rgba(166, 43, 68, 0) 100%
+  );
 }
 
 .footer-opening-hours {
@@ -272,6 +304,83 @@ body {
   text-align: center;
 }
 
+/* Catalogue HTML */
+
+.cars-container {
+  margin: 6rem 10%;
+  padding: 2rem;
+  min-height: 90vh;
+}
+
+.sales-cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem 1rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .card-info {
+  padding: 1.2rem;
+}
+
+.card-info .card-title {
+  font-size: 1.5rem;
+}
+
+.card-model {
+  margin: 0.5ch 0 1ch;
+}
+.card-ali,
+.card-km {
+  margin-top: 0.5ch;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-ali span,
+.card-km span {
+  font-weight: normal;
+}
+
+.card-info .card-price {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #a62b44;
+  font-weight: bold;
+}
+
+.card-info .card-btn {
+  padding: 1rem;
+  width: 100%;
+  background-color: #a62b44;
+  color: #fff;
+  font-weight: bold;
+  font-family: 1rem;
+  letter-spacing: 2px;
+  border: 1px solid #a62b44;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  border: 1px solid #a62b44;
+  color: #121212;
+  background: transparent;
+}
+
 /* Media Queries for Responsiveness */
 
 /* Tablet and Smaller Screens */
@@ -326,10 +435,24 @@ body {
     width: 20px;
   }
 
+  .fixed-button.up {
+    display: flex;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: start;
+  }
+
+  .bar-divider {
+    margin: 2rem 0;
+    background: linear-gradient(
+      90deg,
+      rgba(166, 43, 68, 1) 0%,
+      rgba(166, 43, 68, 0.5) 50%,
+      rgba(166, 43, 68, 0) 100%
+    );
   }
 
   .footer-logo img {
